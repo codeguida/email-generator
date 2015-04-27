@@ -7,7 +7,7 @@ module.exports = function( grunt ) {
     copy: {
       src: {
         files: [
-          { expand: true, cwd: "src/css", src: [ "**" ], dest: "tmp/css" },
+          { expand: true, cwd: "src/css", src: [ "*.css" ], dest: "tmp/css" },
           { expand: true, cwd: "src/images", src: [ "**" ], dest: "tmp/images" },
           { expand: true, cwd: "src", src: [ "*.html" ], dest: "tmp" }
         ]
@@ -35,7 +35,7 @@ module.exports = function( grunt ) {
 
     watch: {
       src: {
-        files: [ "src/css/**/*.{scss}", "src/images/**/*.{gif,png,jpg,jpeg}", "src/**/*.html" ],
+        files: [ "src/css/**/*.{css,less}", "src/images/**/*.{gif,png,jpg,jpeg}", "src/**/*.html" ],
         tasks: [ "build:development" ],
         options: {
           livereload: true
@@ -43,15 +43,13 @@ module.exports = function( grunt ) {
       }
     },
 
-    
-    sass: {
+    less: {
       compile: {
         files: {
-          "tmp/css/core.css": "src/css/core.scss"
+          "tmp/css/core.css": "src/css/core.less"
         }
       }
     },
-    
 
     imagemin: {
       dist: {
@@ -100,13 +98,13 @@ module.exports = function( grunt ) {
 
   grunt.registerTask( "build:development", "Compiles the development build", [
     "copy:src",
-    "sass:compile",
+    "less:compile",
     "copy:tmp"
   ]);
 
   grunt.registerTask( "build:distribution", "Compiles the distribution build", [
     "copy:src",
-    "sass:compile",
+    "less:compile",
     "uncss:dist",
     "htmlmin:dist",
     "premailer:dist",
@@ -122,8 +120,6 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks( "grunt-uncss" );
   grunt.loadNpmTasks( "grunt-contrib-htmlmin" );
   grunt.loadNpmTasks( "grunt-premailer" );
-  
-    grunt.loadNpmTasks( "grunt-sass" );
-  
+  grunt.loadNpmTasks( "grunt-contrib-less" );
 
 };
