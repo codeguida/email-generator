@@ -36,7 +36,7 @@ module.exports = function( grunt ) {
     watch: {
       src: {
         files: [ "src/css/**/*.{css,less}", "src/images/**/*.{gif,png,jpg,jpeg}", "src/**/*.html" ],
-        tasks: [ "build:development" ],
+        tasks: [ "dev:build" ],
         options: {
           livereload: true
         }
@@ -90,19 +90,7 @@ module.exports = function( grunt ) {
     }
   });
 
-  grunt.registerTask( "start", "Compiles the development environment", [
-    "build:development",
-    "connect:dev",
-    "watch:src"
-  ]);
-
-  grunt.registerTask( "build:development", "Compiles the development build", [
-    "copy:src",
-    "less:compile",
-    "copy:tmp"
-  ]);
-
-  grunt.registerTask( "build:distribution", "Compiles the distribution build", [
+  grunt.registerTask( "default", "Compiles the distribution build", [
     "copy:src",
     "less:compile",
     "uncss:dist",
@@ -112,6 +100,17 @@ module.exports = function( grunt ) {
     "copy:tmp"
   ]);
 
+  grunt.registerTask( "dev:build", "Compiles the development build", [
+    "copy:src",
+    "less:compile",
+    "copy:tmp"
+  ]);
+
+  grunt.registerTask( "dev", "Compiles the development environment", [
+    "dev:build",
+    "connect:dev",
+    "watch:src"
+  ]);
 
   grunt.loadNpmTasks( "grunt-contrib-copy" );
   grunt.loadNpmTasks( "grunt-contrib-connect" );
