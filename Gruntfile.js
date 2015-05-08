@@ -7,7 +7,7 @@ module.exports = function( grunt ) {
     copy: {
       src: {
         files: [
-          { expand: true, cwd: "src/css", src: [ "*.css" ], dest: "tmp/css" },
+          { expand: true, cwd: "src/less", src: [ "*.css" ], dest: "tmp/css" },
           { expand: true, cwd: "src/images", src: [ "**" ], dest: "tmp/images" },
           { expand: true, cwd: "src", src: [ "*.html" ], dest: "tmp" }
         ]
@@ -35,7 +35,7 @@ module.exports = function( grunt ) {
 
     watch: {
       src: {
-        files: [ "src/css/**/*.{css,less}", "src/images/**/*.{gif,png,jpg,jpeg}", "src/**/*.html" ],
+        files: [ "src/less/**/*.{css,less}", "src/images/**/*.{gif,png,jpg,jpeg}", "src/**/*.html" ],
         tasks: [ "dev:build" ],
         options: {
           livereload: true
@@ -46,7 +46,7 @@ module.exports = function( grunt ) {
     less: {
       compile: {
         files: {
-          "tmp/css/core.css": "src/css/core.less"
+          "tmp/css/core.css": "src/less/core.less"
         }
       }
     },
