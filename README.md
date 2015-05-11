@@ -8,9 +8,9 @@
 
 Передбачені такі команди:
 
-* `grunt start` - компілює робоче оточення
-* `grunt build:development` - компілює розробницьку збірку
-* `grunt build:distribution` - компілює готову збірку
+* `grunt` - збирає кінцеву збірку
+* `grunt dev` - компілює стилі, відкриває браузер та вішає `watch`
+* `grunt dev:build` - збирає розробницьку збірку (стилі окремо)
 
 ## Дерево проекту
 
@@ -28,3 +28,8 @@
     ├── README.md           # Цей файл
     └── package.json        # Файл з описом проекту
 ```
+
+## Розробники
+
+* Denys Dovhan ([@denysdovhan](https://github.com/denysdovhan))
+* Pavlyuk Petr ([@pavlyukpetr](https://github.com/pavlyukpetr))
