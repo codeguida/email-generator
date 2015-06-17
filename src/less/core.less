@@ -172,7 +172,7 @@ h4 {
 // @section preheader style
 // @tip Set the background color and borders for your email's preheader area.
 #templatePreheader {
-  background-color: #FFFFFF;
+  background-color: @preheader-background-color;
   border-top: 0;
   border-bottom: 0;
 }
@@ -181,7 +181,7 @@ h4 {
 // @section preheader text
 // @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 .preheaderContainer .mcnTextContent,.preheaderContainer .mcnTextContent p {
-  color: #606060;
+  color: @preheader-text-color;
   font-family: @base-font-family;
   font-size: 11px;
   line-height: 125%;
@@ -192,7 +192,7 @@ h4 {
 // @section preheader link
 // @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 .preheaderContainer .mcnTextContent a {
-  color: #606060;
+  color: @preheader-text-color;
   font-weight: normal;
   text-decoration: underline;
 }
@@ -204,6 +204,21 @@ h4 {
   background-color: #FFFFFF;
   border-top: 0;
   border-bottom: 0;
+
+  .header-logo-container {
+    background-color: @header-color;
+    height: @header-height;
+
+    tbody > tr > td {
+      font-family: @base-font-family;
+      font-size: 24px;
+      color: #fff;
+
+      span {
+        
+      }
+    }
+  }
 }
 
 // @tab Header
