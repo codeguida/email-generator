@@ -46,7 +46,7 @@ module.exports = function( grunt ) {
     less: {
       compile: {
         files: {
-          "tmp/css/core.css": "src/less/core.less"
+          "tmp/css/main.css": "src/less/main.less"
         }
       }
     },
