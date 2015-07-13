@@ -1,7 +1,8 @@
 {
   "name": "codeguida-email-generator",
-  "version": "0.0.1",
   "description": "Codeguida email's generator.",
+  "version": "0.0.1",
+  "repository": "codeguida/codeguida-email-generator",
   "author": "Denys Dovhan <email@denysdovhan.com>",
   "devDependencies": {
     "browser-sync": "~2.2.1",
@@ -15,5 +16,13 @@
     "gulp-sass": "^2.0.3",
     "gulp-sourcemaps": "~1.3.0",
     "jade": "~1.9.2"
-  }
+  },
+  "scripts": {
+    "lint": "jshint gulpfile.js --exclude node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 0.9"
+  },
+  "license": "MIT"
 }

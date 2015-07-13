@@ -1,19 +1,15 @@
 'use strict';
 
-var gulp = require('gulp');
+var gulp         = require('gulp'),
+    jade         = require('gulp-jade'),
+    sass         = require('gulp-sass'),
+    rename       = require('gulp-rename'),
+    sourcemaps   = require('gulp-sourcemaps'),
+    inlineCss    = require('gulp-inline-css'),
+    inlineSource = require('gulp-inline-source'),
 
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-
-var jade = require('gulp-jade');
-
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-
-var inlineCss = require('gulp-inline-css');
-var inlineSource = require('gulp-inline-source');
-
-var rename = require('gulp-rename');
+    browserSync  = require('browser-sync'),
+    reload       = browserSync.reload;
 
 
 gulp.task('styles', function() {
