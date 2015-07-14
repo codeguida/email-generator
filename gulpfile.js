@@ -13,7 +13,7 @@ var gulp         = require('gulp'),
 
 
 gulp.task('styles', function() {
-  gulp.src('app/styles/scss/main.scss')
+  gulp.src('template/scss/main.scss')
     .pipe(sass({
       sourcemap: false,
       style: 'expanded',
@@ -21,15 +21,15 @@ gulp.task('styles', function() {
     }))
     .pipe(sourcemaps.write())
     .pipe(rename('style.css'))
-    .pipe(gulp.dest('./app/styles'))
+    .pipe(gulp.dest('./tmp'))
     .pipe(reload({stream: true}));
 });
 
 
 gulp.task('inline', ['styles', 'jade'], function() {
-  return gulp.src('app/index.html')
+  return gulp.src('tmp/index.html')
     .pipe(inlineSource({
-      rootpath: 'app'
+      rootpath: 'tmp'
     }))
     .pipe(inlineCss({
       preserveMediaQueries: true
@@ -39,12 +39,12 @@ gulp.task('inline', ['styles', 'jade'], function() {
 
 
 gulp.task('jade', function() {
-  return gulp.src('app/template/*.jade')
+  return gulp.src('template/*.jade')
     .pipe(jade({
       pretty: true,
       compileDebug: true
     }))
-    .pipe(gulp.dest('app/'));
+    .pipe(gulp.dest('tmp/'));
 });
 
 
@@ -54,15 +54,15 @@ gulp.task('build', ['clean','inline']);
 
 gulp.task('serve', ['styles', 'jade'], function() {
   browserSync({
-    server: './app',
+    server: './tmp',
     notify: false,
     debugInfo: false,
     host: 'localhost'
   });
 
-  gulp.watch('app/styles/**/*.scss', ['styles']);
-  gulp.watch('app/*.html').on('change', reload);
-  gulp.watch('app/template/**/*.jade', ['jade']);
+  gulp.watch('template/scss/**/*.scss', ['styles']);
+  gulp.watch('template/**/*.jade', ['jade']);
+  gulp.watch('tmp/*.html').on('change', reload);
 });
 
 gulp.task('serve:dist', ['inline'], function() {

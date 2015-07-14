@@ -1,0 +1,18 @@
+// $primary-color: #003454;
+$primary-color: #011936;
+$secondary-color: #941c2f;
+$background-color: #e2e9ef;
+$panel-color: #fcf7f8;
+
+@import 'ink';
+
+// Custom styles
+
+body,
+.body {
+  background-color: $panel-color;
+}
+
+.header {
+  // background-color: $primary-color;
+}
