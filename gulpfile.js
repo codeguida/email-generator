@@ -18,7 +18,7 @@ gulp.task('styles', function() {
       sourcemap: false,
       style: 'expanded',
       lineNumbers: true
-    }))
+    }).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(rename('style.css'))
     .pipe(gulp.dest('./tmp'))
