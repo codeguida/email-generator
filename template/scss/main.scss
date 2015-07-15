@@ -1,18 +1,23 @@
-// $primary-color: #003454;
-$primary-color: #011936;
-$secondary-color: #941c2f;
-$background-color: #e2e9ef;
-$panel-color: #fcf7f8;
+$white-color: #fff;
 
+@import 'overrides';
 @import 'ink';
 
-// Custom styles
+// Custom styles goes below
 
 body,
 .body {
-  background-color: $panel-color;
+  background-color: $secondary-color;
+}
+
+.container {
+  background-color: $white-color;
+}
+
+.sub-header {
+  background-color: lighten($primary-color, 10%);
 }
 
 .header {
-  // background-color: $primary-color;
+  background-color: $primary-color;
 }
