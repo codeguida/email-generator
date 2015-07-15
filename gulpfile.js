@@ -60,8 +60,12 @@ gulp.task('serve', ['styles', 'jade'], function() {
     host: 'localhost'
   });
 
-  gulp.watch('template/scss/**/*.scss', ['styles']);
-  gulp.watch('template/**/*.jade', ['jade']);
+  gulp.watch('template/scss/**/*.scss', ['styles'] ).on('change', function (event) {
+    console.log('File '+event.path+' was '+event.type+'...');
+  });
+  gulp.watch('template/**/*.jade', ['jade']).on('change', function (event) {
+    console.log('File '+event.path+' was '+event.type+'...');
+  });
   gulp.watch('tmp/*.html').on('change', reload);
 });
 
