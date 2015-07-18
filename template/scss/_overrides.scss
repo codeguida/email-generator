@@ -20,7 +20,7 @@ $base-font-color: #333;
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-weight: normal;
 
-$body-font-size: 14px;
+$body-font-size: 13px;
 $body-line-height: $body-font-size * 1.5;
 
 // We use these as default colors throughout
@@ -110,19 +110,19 @@ $text-padding: 30px;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font sizes
-// $h1-font-size: 40px;
-// $h2-font-size: 36px;
-// $h3-font-size: 32px;
-// $h4-font-size: 28px;
-// $h5-font-size: 24px;
-// $h6-font-size: 20px;
+$h1-font-size: 24px;          // Main heading used as section headings
+$h2-font-size: 18px;          // Headings for entries and subheadings
+$h3-font-size: 16px;          // All navigational and content headings
+$h4-font-size: 13px;          // |
+$h5-font-size: $h4-font-size; // | All other headed elements
+$h6-font-size: $h4-font-size; // |
 
 // A general <small> styling
 // $small-font-size: 10px;
 
 // We use these to style lead paragraphs
-// $paragraph-margin-bottom: 10px;
-$paragraph-lead-font-size: 18px;
+$paragraph-margin-bottom: 5px;
+$paragraph-lead-font-size: 16px;
 $paragraph-lead-line-height: $paragraph-lead-font-size * 1.5;
 
 // We use these to style anchors
@@ -137,8 +137,8 @@ $anchor-font-color-hover: lighten($anchor-font-color, 10%);
 // $header-anchor-font-color-active: $header-anchor-font-color;
 
 // We use these to style the <hr> element
-// $hr-color: #d9d9d9;
-// $hr-height: 1px;
+$hr-color: $secondary-color;
+$hr-height: 2px;
 
 
 
@@ -172,10 +172,10 @@ $anchor-font-color-hover: lighten($anchor-font-color, 10%);
 // $button-font-family: $base-font-family;
 // $button-font-color: #ffffff;
 // $button-font-color-alt: #555555;
-// $button-font-tny: 12px;
-// $button-font-sml: 16px;
-// $button-font-med: 20px;
-// $button-font-lrg: 24px;
+$button-font-tny: 12px;
+$button-font-sml: 13px;
+$button-font-med: 16px;
+$button-font-lrg: 18px;
 
 // We use these to control button border styles.
 // $button-border-width: 1px;
