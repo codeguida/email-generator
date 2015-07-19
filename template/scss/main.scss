@@ -1,21 +1,53 @@
-$white-color: #fff;
+$white: #fff;
 
 @import 'overrides';
 @import 'ink';
 
 // Custom styles goes below
 
-body,
+h4, h5, h6 {
+  font-weight: bold;
+}
+
 .body {
   background-color: $secondary-color;
 }
 
 .container {
-  background-color: $white-color;
+  background-color: $white;
+  border: 1px solid darken($secondary-color, 10%);
+  margin: 20px auto !important;
 }
 
+//
+// SUB HEADER
+//
 .sub-header {
   background-color: lighten($primary-color, 10%);
+
+  .sub-title {
+    color: $secondary-color;
+    padding-left: $text-padding;
+  }
+
+  .open-in-browser {
+    padding-right: $text-padding !important;
+    text-align: right;
+    vertical-align: middle;
+
+    a {
+      color: darken($secondary-color, 25%);
+      text-decoration: underline;
+
+      &:hover {
+        color: darken($secondary-color, 10%);
+      }
+
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .header {
