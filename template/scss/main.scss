@@ -19,6 +19,7 @@ h4, h5, h6 {
   margin: 20px auto !important;
 }
 
+
 //
 // SUB HEADER
 //
@@ -50,6 +51,15 @@ h4, h5, h6 {
   }
 }
 
+
+//
+// HEADER
+//
 .header {
   background-color: $primary-color;
+
+  .mail-title {
+    color: $white;
+    margin: $h1-font-size 0;
+  }
 }
