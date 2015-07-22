@@ -1,3 +1,35 @@
 {
-  "title": "Новини від Codeguida"
+  "title": "Новини від Codeguida",
+  "articles": [
+    {
+      "title": "3 круті Hover-ефекти для зображень на чистому CSS3",
+      "link": "#",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "img": "image.png"
+    },
+    {
+      "title": "Вивчаємо Ruby разом",
+      "link": "#",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "img": "image.png"
+    },
+    {
+      "title": "Життя за межами Rails: опис альтернативних фреймворків для Ruby",
+      "link": "#",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "img": "image.png"
+    },
+    {
+      "title": "Python + Pygame. Урок 1.",
+      "link": "#",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "img": "image.png"
+    },
+    {
+      "title": "Основи Markdown",
+      "link": "#",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "img": "image.png"
+    }
+  ]
 }

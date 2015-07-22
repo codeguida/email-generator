@@ -9,18 +9,25 @@ block content
         include layout/_header
 
         // email content goes here
-
         table.row
           tr
             td.wrapper.last
               table.twelve.columns
                 tr
-                  td
+                  td.text-pad
                     h1 Привіт всім!
-                    p.lead Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.  
-                    p Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.           
+                    p.lead Phasellus dictum sapien a luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.  
+                    //- hr
                   td.expander
-                    
+
+
+        //- Include arctile mixin
+        include layout/_article.jade
+        //- For each item in article array call article mixin
+        each item in articles
+          +article(item)            
+
+
         table.row.callout
           tr
             td.wrapper.last
@@ -30,6 +37,7 @@ block content
                     p Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. 
                       a(href='#') Click it! &raquo;              
                   td.expander
+
 
         // email footer goes here
         include layout/_footer

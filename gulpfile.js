@@ -41,6 +41,7 @@ gulp.task('inline', ['styles', 'jade'], function() {
 gulp.task('jade', function() {
   return gulp.src('template/*.jade')
     .pipe(jade({
+      locals: require('./data'),
       pretty: true,
       compileDebug: true
     }))
