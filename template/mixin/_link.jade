@@ -1,0 +1,18 @@
+//-
+//- LINK MIXIN
+//- ------- -----
+//- Here is an link mixins, that will call for all items in links array
+
+mixin link(data)
+  table.row.link
+    tr
+      //- Title and description
+      td.wrapper.last
+        table.twelve.columns
+          tr
+            td.text-pad
+              h2
+                a(href!=data.link, target="_blank", title=data.title)
+                  != data.title
+              p!= data.desc
+            td.expander

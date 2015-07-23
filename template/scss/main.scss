@@ -4,8 +4,16 @@
 
 // Custom styles goes below
 
+h1 {
+  margin-top: $body-line-height/2;
+}
+
 h4, h5, h6 {
   font-weight: bold;
+}
+
+hr {
+  margin: $body-line-height/2 0;
 }
 
 .body {
@@ -64,7 +72,7 @@ h4, h5, h6 {
 }
 
 //
-// ARTICLE LINKS
+// ARTICLES
 //
 .article {
   .img-preview {
@@ -87,4 +95,11 @@ h4, h5, h6 {
       }
     }
   }
+}
+
+//
+// LINKS
+//
+.link {
+  // Nothing to do here
 }

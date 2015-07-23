@@ -1,31 +1,37 @@
+
+//- Include mixins
+//- ------- -----
+include mixin/_heading
+include mixin/_article
+include mixin/_link
+
+//- Extend base layout
+//- ------ ---- -------
 extends layout/_layout
 
 block content
-  // Email content
+  // EMAIL CONTAINER
   table.container
     tr
       td
-        // email header goes here
+        // EMAIL HEADER 
         include layout/_header
 
-        // email content goes here
-        table.row
-          tr
-            td.wrapper.last
-              table.twelve.columns
-                tr
-                  td.text-pad
-                    h1 Привіт всім!
-                    p.lead Phasellus dictum sapien a luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.  
-                    //- hr
-                  td.expander
 
-
-        //- Include arctile mixin
-        include layout/_article.jade
+        // ARTICLES
+        //- Make heading for articles
+        +heading(articles.title, articles.desc)
         //- For each item in article array call article mixin
-        each item in articles
+        each item in articles.list
           +article(item)            
+
+
+        // LINKS
+        //- Make heading for links
+        +heading(links.title, links.desc)
+        //- For each item in link array call link mixin
+        each item in links.list
+          +link(item)
 
 
         table.row.callout
@@ -39,5 +45,5 @@ block content
                   td.expander
 
 
-        // email footer goes here
+        // EMAIL FOOTER
         include layout/_footer
