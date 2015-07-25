@@ -1,6 +1,12 @@
+//
+// MAIN STYLES
+//
 
+
+// Import custom settings and Zurb Ink
 @import 'overrides';
 @import 'ink';
+
 
 // Custom styles goes below
 
@@ -8,7 +14,9 @@ h1 {
   margin-top: $body-line-height/2;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 
@@ -23,7 +31,7 @@ hr {
 .container {
   background-color: #fff;
   border: 1px solid darken($secondary-color, 10%);
-  margin: 20px auto !important;
+  margin: 20px auto !important; // 'cause container has own margins
 }
 
 
@@ -39,7 +47,7 @@ hr {
   }
 
   .open-in-browser {
-    padding-right: $text-padding !important;
+    padding-right: $text-padding !important; // Cause left-text-pad doesn't work
     text-align: right;
     vertical-align: middle;
 
