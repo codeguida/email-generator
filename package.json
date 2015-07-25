@@ -1,7 +1,7 @@
 {
   "name": "codeguida-email-generator",
   "description": "Codeguida email's generator.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": "codeguida/codeguida-email-generator",
   "author": "Denys Dovhan <email@denysdovhan.com>",
   "devDependencies": {
@@ -22,7 +22,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">= 0.9"
+    "node": ">= 0.10"
   },
   "license": "MIT"
 }
