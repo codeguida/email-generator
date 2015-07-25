@@ -6,9 +6,11 @@ table.row.sub-header
     td.wrapper.last
       table.twelve.columns
         tr
-          td.six.sub-columns.sub-title ІТ України та світу
+          td.six.sub-columns.sub-title
+            != meta.header
           td.six.sub-columns.open-in-browser
-            a(href='#') Відкрити у браузері
+            a(href=meta.external.href, target="_blank", title=meta.external.title)
+              != meta.external.title
           td.expander
 
 table.row.header
@@ -17,5 +19,6 @@ table.row.header
       table.twelve.columns
         tr
           td.text-pad
-            h1.center.mail-title Новини від Codeguida
+            h1.center.mail-title
+              != meta.title
           td.expander

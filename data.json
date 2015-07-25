@@ -1,8 +1,14 @@
 {
   "meta": {
+    "subject": "Новини від Codeguida #0",
+    "title": "Новини від Codeguida",
+    "header": "ІТ України та світу",
+    "external": {
+      "title": "Відкрити у браузері",
+      "href": "#"
+    },
     "footer": "Ви отримали цей лист тому, що підписані на поштову розсилку від Codeguida."
   },
-  "title": "Новини від Codeguida",
   "articles": {
     "title": "Свіжі статті",
     "desc": "Найцікавіші публікації на Codeguida за останній тиждень.",
