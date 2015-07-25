@@ -51,7 +51,9 @@ gulp.task('jade', function() {
 
 gulp.task('clean', require('del').bind(null, 'dist'));
 
+
 gulp.task('build', ['clean','inline']);
+
 
 gulp.task('serve', ['styles', 'jade'], function() {
   browserSync({
@@ -69,6 +71,7 @@ gulp.task('serve', ['styles', 'jade'], function() {
   });
   gulp.watch('tmp/*.html').on('change', reload);
 });
+
 
 gulp.task('serve:dist', ['inline'], function() {
   browserSync({
