@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "footer": "Ви отримали цей лист тому, що підписані на поштову розсилку від Codeguida."
+  },
   "title": "Новини від Codeguida",
   "articles": {
     "title": "Свіжі статті",
@@ -66,5 +69,27 @@
         "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     ]
-  }
+  },
+  "social": [
+    {
+      "title": "Facebook",
+      "href": "#"
+    },
+    {
+      "title": "Twitter",
+      "href": "#"
+    },
+    {
+      "title": "Google+",
+      "href": "#"
+    },
+    {
+      "title": "ВКонтакті",
+      "href": "#"
+    },
+    {
+      "title": "Gitter-чат",
+      "href": "#"
+    }
+  ]
 }
