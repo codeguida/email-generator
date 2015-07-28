@@ -1,0 +1,120 @@
+//
+// MAIN STYLES
+//
+
+
+// Import custom settings and Zurb Ink
+@import 'overrides';
+@import 'ink';
+
+
+// Custom styles goes below
+
+h1 {
+  margin-top: $body-line-height/2;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+hr {
+  margin: $body-line-height/2 0;
+}
+
+.body {
+  background-color: $secondary-color;
+}
+
+.container {
+  background-color: #fff;
+  border: 1px solid darken($secondary-color, 10%);
+  margin: 20px auto !important; // 'cause container has own margins
+}
+
+
+//
+// SUB HEADER
+//
+.sub-header {
+  background-color: lighten($primary-color, 10%);
+
+  .sub-title {
+    color: $secondary-color;
+    padding-left: $text-padding;
+  }
+
+  .open-in-browser {
+    padding-right: $text-padding !important; // Cause left-text-pad doesn't work
+    text-align: right;
+    vertical-align: middle;
+
+    a {
+      color: darken($secondary-color, 25%);
+      text-decoration: underline;
+
+      &:hover {
+        color: darken($secondary-color, 10%);
+      }
+
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+//
+// HEADER
+//
+.header {
+  background-color: $primary-color;
+
+  .mail-title {
+    color: #fff;
+    margin: $h1-font-size 0;
+  }
+}
+
+//
+// ARTICLES
+//
+.article {
+  .img-preview {
+    border: 1px solid $secondary-color;
+
+    &:active {
+      border-color: darken($secondary-color, 10%);
+    }
+  }
+
+  .desc-wrapper {
+    h2 {
+      border-bottom: 1px solid $secondary-color; // underline
+      margin: $body-line-height/2 0;
+      padding-bottom: 2px; // padding before border-line
+
+      a {
+        // 'cause Ink set link's $anchor-font-color as !important
+        color: $base-font-color !important;
+      }
+    }
+  }
+}
+
+//
+// LINKS
+//
+.link {
+  // Nothing to do here
+}
+
+//
+// FOOTER
+//
+.footer {
+  // Nothing to do here
+}

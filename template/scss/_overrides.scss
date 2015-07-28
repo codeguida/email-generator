@@ -1,0 +1,207 @@
+//
+// OVERRIDES INK SETTINGS
+//
+
+$base-line-height: 1.5;
+
+// We use this to control whether or not CSS classes come through in the gem files.
+// $include-html-classes: true;
+
+
+
+//
+// $GLOBAL
+//
+
+// $include-html-global-classes: $include-html-classes;
+
+// We use these to control font styles
+$base-font-color: #333;
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-weight: normal;
+
+$body-font-size: 13px;
+$body-line-height: $body-font-size * 1.5;
+
+// We use these as default colors throughout
+$primary-color: #003454;
+$secondary-color: #e2e9ef;
+$alert-color: #941c2f;
+$success-color: #5da423;
+
+// We use this to control how much we darken things on hover
+$secondary-border-color: darken($secondary-color, 10%);
+$alert-border-color: darken($alert-color, 10%);
+$success-border-color: darken($success-color, 10%);
+
+// We use these to make sure border radius matches unless we want it different.
+// $global-radius: 3px;
+// $global-rounded: 500px;
+
+// $column-gutter: 20px;
+
+
+
+//
+// $NORMALIZE
+//
+
+// $include-html-normalize-classes: $include-html-classes;
+
+
+
+//
+// $ALIGNMENT
+//
+
+// $include-html-alignment-classes: $include-html-classes;
+
+
+
+//
+// $GRID
+//
+
+// $include-html-grid-classes: $include-html-classes;
+// $include-html-sub-colums-grid-classes: $include-html-grid-classes;
+
+// $container-width: 580px;
+// $small-container-width: 95%;
+// $total-columns: 12;
+
+// $wrapper-padding-top: 10px;
+// $column-cell-padding-bottom: 10px;
+$text-padding: 30px;
+
+// $sub-column-padding-right: $column-gutter / 2;
+
+
+
+//
+// $MEDIA-QUERY-RANGES
+//
+
+// $include-html-media-query-classes: $include-html-classes;
+
+// $small-range: (0px, $container-width * (600px / 580px));
+
+// $screen: "only screen";
+
+// $landscape: "#{$screen} and (orientation: landscape)";
+// $portrait: "#{$screen} and (orientation: portrait)";
+
+// $small-up: $screen;
+// $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+
+
+
+//
+// $OUTLOOK-FIRST
+//
+
+// $include-html-outlook-first-classes: $include-html-classes;
+
+
+
+//
+// $TYPOGRAPHY
+//
+
+// $include-html-type-classes: $include-html-classes;
+
+// We use these to control header font sizes
+$h1-font-size: 24px;          // Main heading used as section headings
+$h2-font-size: 18px;          // Headings for entries and subheadings
+$h3-font-size: 16px;          // All navigational and content headings
+$h4-font-size: 13px;          // |
+$h5-font-size: $h4-font-size; // | All other headed elements
+$h6-font-size: $h4-font-size; // |
+
+// A general <small> styling
+// $small-font-size: 10px;
+
+// We use these to style lead paragraphs
+$paragraph-margin-bottom: 5px;
+$paragraph-lead-font-size: 16px;
+$paragraph-lead-line-height: $paragraph-lead-font-size * 1.5;
+
+// We use these to style anchors
+// $anchor-text-decoration: none;
+$anchor-font-color: lighten($primary-color, 10%);
+// $anchor-font-color-visited: $anchor-font-color;
+$anchor-font-color-hover: lighten($anchor-font-color, 10%);
+// $anchor-font-color-active: $anchor-font-color-hover;
+
+// $header-anchor-font-color: $anchor-font-color;
+// $header-anchor-font-color-visited: $header-anchor-font-color;
+// $header-anchor-font-color-active: $header-anchor-font-color;
+
+// We use these to style the <hr> element
+$hr-color: $secondary-color;
+$hr-height: 2px;
+
+
+
+//
+// $BLOCK-GRID
+//
+
+// $include-html-block-grid-classes: $include-html-grid-classes;
+
+// We use this to control the maximum number of block grid elements per row
+// $block-grid-elements: 8;
+// $block-grid-default-spacing: $column-gutter;
+// $align-block-grid-to-grid: false;
+
+
+
+//
+// $BUTTONS
+//
+
+// $include-html-button-classes: $include-html-classes;
+
+// We use these to build padding for buttons.
+// $button-dft: 8px 0;
+// $button-tny: 5px 0 4px;
+// $button-sml: 8px 0 7px;
+// $button-med: 12px 0 10px;
+// $button-lrg: 21px 0 18px;
+
+// We use these to control button text styles.
+// $button-font-family: $base-font-family;
+// $button-font-color: #ffffff;
+// $button-font-color-alt: #555555;
+$button-font-tny: 12px;
+$button-font-sml: 13px;
+$button-font-med: 16px;
+$button-font-lrg: 18px;
+
+// We use these to control button border styles.
+// $button-border-width: 1px;
+// $button-border-style: solid;
+$button-bg: lighten($primary-color, 10%);
+$button-border-color: $primary-color;
+
+// We use this to set the default radius used throughout the core.
+// $button-radius: $global-radius;
+// $button-round: $global-rounded;
+
+
+
+//
+// $PANELS
+//
+
+// $include-html-panel-classes: $include-html-classes;
+
+// We use these to control the background and border styles
+$panel-bg: $secondary-color;
+// $panel-border-style: solid;
+// $panel-border-size: 1px;
+
+// We use this to control how much we darken things on hover
+$panel-border-color: darken($secondary-color, 10%);
+
+// We use this to set default padding
+$panel-padding: 10px;

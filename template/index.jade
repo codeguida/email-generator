@@ -1,0 +1,41 @@
+
+//- Include mixins
+//- ------- -----
+include mixin/_heading
+include mixin/_article
+include mixin/_link
+
+//- Extend base layout
+//- ------ ---- -------
+extends layout/_layout
+
+block content
+  // EMAIL CONTAINER
+  table.container
+    tr
+      td
+        // EMAIL HEADER 
+        include layout/_header
+
+
+        // ARTICLES
+        //- Make heading for articles
+        +heading(articles.title, articles.desc)
+        //- For each item in article array call article mixin
+        each item in articles.list
+          +article(item)            
+
+
+        // LINKS
+        //- Make heading for links
+        +heading(links.title, links.desc)
+        //- For each item in link array call link mixin
+        each item in links.list
+          +link(item)
+
+        //- Divider before footer
+        hr
+
+
+        // EMAIL FOOTER
+        include layout/_footer

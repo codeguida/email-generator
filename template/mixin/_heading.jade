@@ -1,0 +1,16 @@
+//-
+//- HEADING MIXIN
+//- ------- -----
+//- Here is an heading mixins, that will we should call for creating new section
+
+mixin heading(title, desc)
+  table.row
+    tr
+    td.wrapper.last
+      table.twelve.columns
+        tr
+          td.text-pad
+            h1!= title
+            p.lead!= desc
+            hr
+          td.expander

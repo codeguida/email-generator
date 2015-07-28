@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "subject": "Новини від Codeguida #0",
+    "title": "Новини від Codeguida",
+    "header": "ІТ України та світу",
+    "external": {
+      "title": "Відкрити у браузері",
+      "href": "#"
+    },
+    "footer": "Ви отримали цей лист тому, що підписані на поштову розсилку від Codeguida."
+  },
+  "articles": {
+    "title": "Свіжі статті",
+    "desc": "Найцікавіші публікації на Codeguida за останній тиждень.",
+    "list": [
+      {
+        "title": "3 круті Hover-ефекти для зображень на чистому CSS3",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "image.png"
+      },
+      {
+        "title": "Вивчаємо Ruby разом",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "image.png"
+      },
+      {
+        "title": "Життя за межами Rails: опис альтернативних фреймворків для Ruby",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "image.png"
+      },
+      {
+        "title": "Python + Pygame. Урок 1.",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "image.png"
+      },
+      {
+        "title": "Основи Markdown",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "image.png"
+      }
+    ]
+  },
+  "links": {
+    "title": "Посилання",
+    "desc": "Підбірка корисних матеріалів та сервісів до вашої скарбнички.",
+    "list": [
+      {
+        "title": "Як почати з Babel",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "title": "Генератори та проміси в ES6",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "title": "Atom 1.0 - редактор майбутнього",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "title": "Найкращі практики Web UI/UX дизайну",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "title": "Паттерни масштабованих веб-додатків",
+        "link": "#",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]
+  },
+  "social": [
+    {
+      "title": "Facebook",
+      "href": "#"
+    },
+    {
+      "title": "Twitter",
+      "href": "#"
+    },
+    {
+      "title": "Google+",
+      "href": "#"
+    },
+    {
+      "title": "ВКонтакті",
+      "href": "#"
+    },
+    {
+      "title": "Gitter-чат",
+      "href": "#"
+    }
+  ]
+}

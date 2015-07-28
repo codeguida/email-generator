@@ -1,0 +1,32 @@
+//- FOOTER
+//- Here is footer of email
+
+table.row.footer
+  tr
+    td.wrapper.last
+      table.twelve.columns
+        tr
+          td(align='center')
+            center
+              //- Text from meta information
+              p.center
+                != meta.footer
+
+              //- Social links
+              p.center
+                each value, index in social
+                  a(href!=value.href, target="_blank", title= value.title)
+                    != value.title
+                  //- Repeat until this is last item
+                  unless index == (social.length - 1)
+                    |  • 
+
+              //- Unsubscribe and email us
+              p.center
+                a(href='#') Написати нам
+                |  • 
+                a(href='#') Відписатись
+
+              //- Copyright
+              p.center © 2014-2015 Codeguida
+          td.expander

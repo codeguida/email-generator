@@ -1,0 +1,29 @@
+//-
+//- ARTICLE MIXIN
+//- ------- -----
+//- Here is an article mixins, that will call for all items in articles array
+
+mixin article(data)
+  table.row.article
+    tr
+      //- Image preview
+      td.wrapper
+        table.four.columns
+          tr
+            td.left-text-pad
+              a(href!=data.link, target="_blank", title=data.title)
+                img(src!=data.img, width="150", height="150").img-preview
+
+            td.expander
+
+      //- Title and description
+      td.wrapper.last
+        table.eight.columns
+          tr
+            td.right-text-pad.desc-wrapper
+              h2
+                a(href!=data.link, target="_blank", title=data.title)
+                  != data.title
+              p!= data.desc
+
+            td.expander
