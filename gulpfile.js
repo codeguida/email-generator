@@ -1,6 +1,7 @@
 'use strict';
 
-var gulp         = require('gulp'),
+var fs           = require('fs'),
+    gulp         = require('gulp'),
     jade         = require('gulp-jade'),
     sass         = require('gulp-sass'),
     rename       = require('gulp-rename'),
@@ -41,7 +42,7 @@ gulp.task('inline', ['styles', 'jade'], function() {
 gulp.task('jade', function() {
   return gulp.src('template/*.jade')
     .pipe(jade({
-      locals: require('./data'),
+      locals: JSON.parse(fs.readFileSync('./data.json', 'utf-8')),
       pretty: true,
       compileDebug: true
     }))
@@ -66,7 +67,7 @@ gulp.task('serve', ['styles', 'jade'], function() {
   gulp.watch('template/scss/**/*.scss', ['styles'] ).on('change', function (event) {
     console.log('File '+event.path+' was '+event.type+'...');
   });
-  gulp.watch('template/**/*.jade', ['jade']).on('change', function (event) {
+  gulp.watch(['template/**/*.jade', 'data.json'], ['jade']).on('change', function (event) {
     console.log('File '+event.path+' was '+event.type+'...');
   });
   gulp.watch('tmp/*.html').on('change', reload);
